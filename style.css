@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #0b0b0f;
+  color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+p {
+  color: #cfcfd6;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #2a2a35;
+  margin: 30px 0;
+}
+
+.btn button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(135deg, black, #00aaff);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(30, 60, 255, 0.5);
+}
+
+.tiktok button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: linear-gradient(135deg, black, #00aaff);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(30, 60, 255, 0.5);
+}
+
+.card {
+  background: #16161d;
+  border: 1px solid #2a2a35;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  margin: 0;
+  padding: 18px 20px;
+  background: linear-gradient(135deg, black, #00aaff);
+  border: none;
+  border-radius: 10;
+  border-bottom: 2px solid #3a3a45;
+  text-align: center;
+  box-shadow: none;
+}
+
+.titulo h1 {
+  margin: 0;
+  color: white;
+}
+
+@keyframes construir {
+  from {
+    opacity: 0;
+    transform: translateY(60px) scale(0.9);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .conteudo > * {
+    animation: construir linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+}
+
+img {
+    width: 250px;
+    border-radius:15px;
+}
